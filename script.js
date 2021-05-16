@@ -8,15 +8,7 @@ function presentTime() {
     date.textContent = today;
 };
 
-/*function rowHour() {
-let DateTime = luxon.DateTime;
-    let today = DateTime.local().toLocaleString(DateTime.DATE_HUGE);
-    console.log(today);
-    let date = document.querySelector("#currentDay");
-    date.textContent = today;
 
-};
-*/
 function hourBlock() {
     $(".time").each(function () {
         var currentTime = luxon.DateTime.now().c.hour;  
@@ -68,7 +60,9 @@ function save() {
 
     let hour = $(this).parent().attr("id");
 
-    localStorage.setItem(text, hour);
+    localStorage.setItem("text", JSON.stringify(text));
+    localStorage.setItem("hour", JSON.stringify(hour));
+
 
 });
 
@@ -91,11 +85,4 @@ initiate();
 
 
 
-//alert(localStorage.getItem('.text'));
-
-//var html = $('.text')[0].outerHTML;
-
-//localStorage.setItem('.text', html);
-
-//alert(localStorage.getItem('.text'));
 

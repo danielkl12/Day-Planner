@@ -1,3 +1,3 @@
 # homework-05-day-planner
 
-![Day Planner] (./assets/screenshot.jpg)
+![Day Planner] (/assets/screenshot.jpg)

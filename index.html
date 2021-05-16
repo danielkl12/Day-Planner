@@ -41,51 +41,56 @@
       <!-- Timeblocks go here -->
 
 <div class = "row">
-  <div class = "hour" id = "9"> 9am </div>
-  <textarea></textarea>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
+  <div id = "hour-9" class="time"> 9am </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
+</div>
 
+<div class = "row">
+  <div id = "hour-10" class="time">10am</div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
+</div>
+
+<div class = "row">
+  <div id = "hour-11" class="time">11am</div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
+</div>
+
+<div class = "row">
+  <div id = "hour-12" class="time">12pm</div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
+</div>
+
+<div class = "row">
+  <div id = "hour-13" class="time"> 1pm </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
 </div>
 <div class = "row">
-  <div class = "hour" id = "10"> 10am </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
+  <div id = "hour-14" class="time"> 2pm </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
 </div>
+
 <div class = "row">
-  <div class = "hour" id = "11"> 11am </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
+  <div id = "hour-15" class="time"> 3pm </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
 </div>
+
 <div class = "row">
-  <div class = "hour" id = "12"> 12pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
+  <div id = "hour-16" class="time"> 4pm </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
 </div>
+
 <div class = "row">
-  <div class = "hour" id = "13"> 1pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
-</div>
-<div class = "row">
-  <div class = "hour" id = "14"> 2pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
-</div>
-<div class = "row">
-  <div class = "hour" id = "15"> 3pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
-</div>
-<div class = "row">
-  <div class = "hour" id = "16"> 4pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
-</div>
-<div class = "row">
-  <div class = "hour" id = "17"> 5pm </div>
-  <div class = "col my-col col-a2 edit_cont" > </div>
-  <div class = "saveBtn"> Save </div>
+  <div id = "hour-17" class="time"> 5pm </div>
+  <textarea class="text"></textarea>
+  <button class = "saveBtn"> Save </button>
 </div>
 
 </div>
@@ -95,16 +100,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <script src="script.js"></script>
-    <script>
-      //current day displayed at top of planner
-  
-          let DateTime = luxon.DateTime;
-        let today = DateTime.local().toLocaleString(DateTime.DATE_HUGE);
-        console.log(today);
-        let date = document.querySelector("#currentDay");
-        date.textContent = today;
-            
-            
-        </script>
+   
   </body>
 </html>
